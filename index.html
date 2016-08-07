@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="hours-new.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+	<title>Hours Clocked</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="title-area">
+			<h1>Hours Clocked</h1>
+			<p id="home" class="small-text"><a href="../index.html">dkmullen.com</a></p>
+		</div>
+		<p id="directions" class="small-text">You'll figure it out.</p><br />
+			<div id="form-wrapper">
+				<div class="column">
+					<form class="day" id="day1">
+						<p><strong>#DAY</strong></p>
+						<div class="little-column">
+							<input type="radio" name="type" id="norm1" value="norm"><label for="norm1">Norm</label><br>
+							<input type="radio" name="type" id="vac1" value="vac"><label for="vac1">Vac</label><br>
+							<input type="radio" name="type" id="sick1" value="sick"><label for="sick1">Sick</label><br>
+							<input type="radio" name="type" id="other1" value="other"><label for="other1">Other</label><br>
+						</div>
+						<div class="little-column2">
+							<label class="in-out-label">IN</label><input type="time" name="in1"data-bind="value: in1"><br>
+							<label class="in-out-label">OUT</label><input type="time" name="out1" data-bind="value: out1"><br>
+							<label class="in-out-label">IN</label><input type="time" name="in2" data-bind="value: in2"><br>
+							<label class="in-out-label">OUT</label><input type="time" name="out2" data-bind="value: out2"><br>
+						</div>
+						<div class="little-column3">
+							<p><strong>Hours Clocked</strong></p>
+							<p>Regular: <span id="reg-hours" data-bind="text: reg_hours"</span></p>
+							<p>Overtime: <span id="ot-hours" data-bind="text: ot_hours"</span></p>
+							<button type="button">Reset</button>
+						</div>
+					</form>
+				</div>
+				<div class="column">
+					<form class="day" id="day8">
+						<p><strong>#DAY</strong></p>
+						<div class="little-column">
+							<input type="radio" name="type" id="norm8" value="norm"><label for="norm8">Norm</label><br>
+							<input type="radio" name="type" id="vac8" value="vac"><label for="vac8">Vac</label><br>
+							<input type="radio" name="type" id="sick8" value="sick"><label for="sick8">Sick</label><br>
+							<input type="radio" name="type" id="other8" value="other"><label for="other8">Other</label><br>
+						</div>
+						<div class="little-column2">
+							<label class="in-out-label">IN</label><input type="time" name="in1"><br>
+							<label class="in-out-label">OUT</label><input type="time" name="out1"><br>
+							<label class="in-out-label">IN</label><input type="time" name="in2"><br>
+							<label class="in-out-label">OUT</label><input type="time" name="out2"><br>
+						</div>
+						<div class="little-column3">
+							<p><strong>Hours Clocked</strong></p>
+							<p>Regular: 0:00</p>
+							<p>Overtime: 0:00</p>
+							<button type="button">Reset</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</form>
+	</div>
+
+<script src="knockoutjs_3-4-0.js"></script>
+<script src="hours.js"></script>
+</body>
+</html>
